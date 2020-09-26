@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="description" content="Trabajo Integrador Final">
+
+  <meta name="keywords" content="TIF, Software,I.S.F.D">
+
+  <meta name="author" content="Gonzalez Oviedo Tomas Emiliano">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Ciclo de vida</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+  <link rel="stylesheet" type="text/css" href="css/content.css"  media="screen,projection">
+
+  <link href="css/Hover-master/hover-min.css" rel="stylesheet" media="all">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+</head>
+
+<body>
+
+  <header>
+
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+
+      <li class="logo-container hvr-sweep-to-right" style="height: 64px;padding-top: 7px;"><a class="hvr-icon-grow" href="dashboard.html"><i class="material-icons hvr-icon">desktop_windows</i>Presentación</a></li>
+
+      <li class="hvr-sweep-to-right"><a class="hvr-icon-grow" style="cursor: pointer;" onclick="animateLink(this.id)" id="ISFD"><i class="material-icons hvr-icon ">school</i>Tópico: I.S.F.D</a></li>
+
+      <li style="background-color: #00897b;" class="hvr-sweep-to-right"><a class="hvr-icon-grow white-text" style="cursor: pointer;" onclick="animateLink(this.id)" id="actividades"><i class="material-icons white-text hvr-icon">list_all</i>Actividades</a></li>
+
+      <li class="hvr-sweep-to-right"><a class="hvr-icon-grow" style="cursor: pointer;" onclick="animateLink(this.id)" id="herramientas"><i class="material-icons hvr-icon">settings_applications</i>Herramientas</a></li>
+
+      <li class="hvr-sweep-to-right"><a class="hvr-icon-grow" style="cursor: pointer;" onclick="animateLink(this.id)" id="bugs"><i class="material-icons hvr-icon">bug_report</i>Bugs</a></li>
+
+      <li class="hvr-sweep-to-right"><a class="hvr-icon-grow" style="cursor: pointer;" onclick="animateLink(this.id)" id="demo"><i class="material-icons hvr-icon ">code</i>Demostración</a></li>
+
+      <li class="hvr-sweep-to-right"><a class="hvr-icon-grow" style="cursor: pointer;" onclick="animateLink(this.id)" id="conclusion"><i class="material-icons hvr-icon">rate_review</i>Conclusión</a></li>
+
+    </ul>
+
+    <a href="#" id="hamburger-menu" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+      <div class="navbar-fixed">
+
+        <nav class="teal darken-1">
+
+            <div class="nav-wrapper">
+
+              <a href="#!" id="title-navbar"class="brand-logo center">T.I.F</a>
+
+            </div>
+
+        </nav>
+
+      </div>
+
+    </header>
+
+    <main>
+
+    <div class="container">
+          
+      <div class="row">
+
+        <div class="col s12 animated fadeInRightBig">
+
+          <h1>Actividades comunes</h1>
+          
+          <div class="carousel carousel-slider center">
+
+            <div class="carousel-fixed-item">
+
+            </div>
+
+            <div class="carousel-item  blue-grey lighten-1 white-text lifecycle-activities" href="#one!">
+
+              <h2>Obtención y Análisis de los requerimientos</h2>
+
+              <p class="white-text">Entrevistas, encuestas y análisis del contexto</p>
+
+            </div>
+
+            <div class="carousel-item blue-grey white-text lifecycle-activities" href="#two!">
+
+              <h2>Diseño</h2>
+
+              <p class="white-text">D.E.R, Casos de Uso, D.F.D, etc.</p>
+
+            </div>
+
+            <div class="carousel-item blue-grey darken-1 white-text lifecycle-activities" href="#three!">
+
+              <h2>Planificación</h2>
+
+              <p class="white-text">Definir actividades</p>
+
+            </div>
+
+            <div class="carousel-item blue-grey darken-2 white-text lifecycle-activities" href="#four!">
+
+              <h2>Programación</h2>
+
+              <p class="white-text">¡A codificar!</p>
+
+            </div>
+
+            <div class="carousel-item blue-grey darken-3 white-text lifecycle-activities" href="#four!">
+
+              <h2>Pruebas</h2>
+
+              <p class="white-text">Pruebas manuales o asistidas por software.</p>
+
+            </div>
+
+            <div class="carousel-item blue-grey darken-4 white-text lifecycle-activities" href="#four!">
+
+              <h2>Implementación</h2>
+
+              <p class="white-text">"Instalar" el programa.</p>
+
+            </div>
+
+            <div class="carousel-item black white-text lifecycle-activities" href="#four!">
+
+              <h2>Plan de mantenimiento</h2>
+
+              <p class="white-text">Capacitación a los usuarios, arreglar bugs, plan de respaldos,etc.</p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col s12">
+
+          <h2 class="animated fadeInUpBig">Proceso evolutivo</h2>
+
+          <h3 class="animated fadeInUpBig">Justificar</h3>
+
+          <img class="materialboxed evolutionary-life-cycle animated fadeInUpBig" width="650" src="imgs/Ciclodevidasoftware.png">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="page-footer teal darken-1">
+
+    <div class="container">
+
+          <div class="row">
+
+              <div class="col l6 s12">
+
+                  <h5 class="white-text">Trabajo integrador final</h5>
+
+                  <p class="grey-text text-lighten-4">Software de Gestión, control y seguimiento para el I.S.F.D en Educación Física.</p>
+
+                </div>
+
+              <div class="col l4 offset-l2 s12">
+
+                  <h5 class="white-text">Agradecimientos:</h5>
+
+                  <ul>
+
+                      <li><a class="grey-text text-lighten-3" href="#!">A mi familia.</a></li>
+
+                      <li><a class="grey-text text-lighten-3" href="#!">A los profesores.</a></li>
+
+                      <li><a class="grey-text text-lighten-3" href="#!">Al personal de la universidad.</a></li>
+
+                  </ul>
+
+                </div>
+
+            </div>
+
+            <div class="footer-copyright teal darken-1">
+
+              <div class="container">
+
+                <div class="row">
+
+                  <div class="center">
+
+                    © 2019 Hecho por: González Oviedo Tomás Emiliano.
+                </div>
+
+              </div>
+
+          </div>
+
+            </div>
+
+        </div>
+
+  </footer>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/navigationlinks.js"></script>
+  <script>
+    //Sidebar initialize with normal JS.  
+      var sideBar = document.querySelector('.sidenav');
+      var instanceSideNav = M.Sidenav.init(sideBar);
+
+      var carousel = document.querySelector('.carousel');
+      var instanceCarousel = M.Carousel.init(carousel,{
+        fullWidth: true,
+        indicators: true
+      });
+
+      var imgbox = document.querySelector('.materialboxed');
+      var instanceImgbox = M.Materialbox.init(imgbox, {});
+  </script>
+</body>
+</html>

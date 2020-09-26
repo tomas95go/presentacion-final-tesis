@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TEST</title>
+</head>
+<body>
+	<input type="text" name="txtInput" id="usrInput"></input>
+	<button id="btnAgregar">Agregar a la lista</button>
+	<ul id="listaDeInputsDelUsuario">
+		
+	</ul>
+
+	<script type="text/javascript">
+
+		let cambiarTextoARojo = (listaDeInputsDelUsuario, inputDelUsrEnLista) => {
+
+			const a = listaDeInputsDelUsuario.children.length;
+
+			if(a % 4 == 0){
+
+				inputDelUsrEnLista.style.color = 'red';
+				
+			}
+
+		}
+
+
+		let agrearItemALista = (usrInputVal) => {
+
+			let listaDeInputsDelUsuario = document.getElementById('listaDeInputsDelUsuario');
+
+			let inputDelUsrEnLista = document.createElement('li');
+
+			inputDelUsrEnLista.appendChild(document.createTextNode(usrInputVal));
+
+			listaDeInputsDelUsuario.appendChild(inputDelUsrEnLista);
+
+			cambiarTextoARojo(listaDeInputsDelUsuario, inputDelUsrEnLista);
+
+		};
+		
+
+		let validarInputUsr = () => {
+
+			let usrInputVal = document.getElementById('usrInput').value;
+
+			if(usrInputVal === ''){
+
+				console.log('El campo no puede estar vacío');
+
+			}else{
+
+				agrearItemALista(usrInputVal);
+
+			}
+
+		};
+
+		let btnAgregar = document.getElementById('btnAgregar');
+
+		btnAgregar.addEventListener('click', validarInputUsr);
+		
+	</script>
+</body>
+</html>
